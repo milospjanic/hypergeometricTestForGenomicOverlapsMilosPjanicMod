@@ -23,6 +23,7 @@ wc -l B_BG_noA | cut -f1 -d ' '
 echo "Number of genomic background not overlapping A or B"
 wc -l BG_noA | cut -f1 -d ' '
 
+echo "Hypergeometric p-value will be calculated with phyper in R as phyper(A-B overlap in BG, A no B in BG, total BG minus BG-A overlap, B no A in BG, lower.tail = FALSE, log.p = FALSE)"
 #writing and executing R script
 echo "#!/usr/bin/Rscript
 A_B.hypergeometric  <-
