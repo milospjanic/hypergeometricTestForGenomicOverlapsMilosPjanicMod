@@ -17,6 +17,8 @@ Number of uniq B not overlapping A in genomic background 45854
 
 Number of genomic background not overlapping A or B 2229526
 
+Hypergeometric p-value will be calculated with phyper in R as phyper(A-B overlap in BG, A no B in BG, total BG minus BG-A overlap, B no A in BG, lower.tail = FALSE, log.p = FALSE)
+
 Hypergeometric p-value:
 
 [1] 2.568593e-129
