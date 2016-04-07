@@ -1,5 +1,16 @@
 # hypergeometric-test-for-genomic-overlaps
 
+This is a combined bash/R script that will generate a hypergeometric p-value that shows significance for the overlap of two sets of genomic regions (for example from ChIP-Seq experiments).
+
+To calculate hypergeometric p-value you would need three BED files: 1. First bed file to overlap, i.e. file1.bed 2. Second bed file for overlap, i.e. file2.bed 3. Bed file that will serve as genomic background for overlaps, i.e. background.bed
+
+Note that file names are optional.
+
+As genomic background you can use e.g. combined ENCODE set of open chromatin regions or a similar data set. Genomic background is necessary to calculate the constituents of the hypergeometric test elements: A-B overlap in BG, A no B in BG, total BG minus BG-A overlap, B no A in BG.
+
+We provide a combined ENCODE DHS data set in a bed file which you can use as a background set, background.bed. 
+
+
 # Example usage
 
 **./hypergeometric.sh file1.bed file2.bed background.bed**
