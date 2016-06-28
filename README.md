@@ -1,4 +1,4 @@
-# hypergeometric-test-for-genomic-overlaps
+# hypergeometricTestForGenomicOverlapsMilosPjanicMod
 
 This is a combined bash/R script that will generate a hypergeometric p-value that shows significance for the overlap of two sets of genomic regions (for example from ChIP-Seq experiments).
 
